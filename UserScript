@@ -1,0 +1,11 @@
+// ==UserScript==
+// @name         Расписание ПВГУС
+// @namespace    Anastasiya
+// @version      0.1
+// @description  Изменяет дефолтное значение расписание ПВГУС-а на СППИ20
+// @author       You
+// @match        https://www.tolgas.ru/services/raspisanie/?id=0
+// @icon         https://www.google.com/s2/favicons?sz=64&domain=tampermonkey.net
+// @grant        none
+// ==/UserScript==
+    document.body.innerHTML= document.body.innerHTML.replace('<option rel="0" value="124" selected="selected">АИВТЭ20</option>','<option rel="259" value="37">СППИ20</option>');
